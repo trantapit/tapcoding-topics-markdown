@@ -1,4 +1,15 @@
-# GraphQL - Flexible query with Schema defines first
+# GraphQL - Learn about GraphQL, how it works, and how to use it
+
+Hi guys,
+I’m TapCoding. As many of you may already know, the adoption of GraphQL has been rapidly increasing, with major companies like Facebook, GitHub, and others leveraging it in their applications. Many developers have transitioned to GraphQL due to the powerful features it offers. This article aims to help you gain a clear understanding of what GraphQL is and how it works.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [What Is GraphQL?](#what-is-graphql)
+- [Query](#query)
+- [Mutation](#mutation)
+- [Schemas](#schemas)
+- [Conclusion](#conclusion)
 
 
 ## Introduction
@@ -52,7 +63,7 @@ Queries are used to perform read operations, that is, fetching data from the ser
 {
   "data": {
     "author": {
-      "name": "Chimezie Enyinnaya",
+      "name": "Tap Coding",
       "posts": [
         {
           "title": "How to build a collaborative note app using Laravel"
@@ -144,10 +155,10 @@ This will throw an error as there would be conflict between the two `name` field
 
 ```graphql
 {
-  chimezie: author(id: 5) {
+  tap: author(id: 5) {
     name
   }
-  neo: author(id: 7) {
+  coding: author(id: 7) {
     name
   }
 }
@@ -175,11 +186,11 @@ Fragments are reusable set of fields that can be included in queries as needed. 
 
 ```graphql
 {
-  chimezie: author(id: 5) {
+  tap: author(id: 5) {
     name
     twitterHandle
   }
-  neo: author(id: 7) {
+  coding: author(id: 7) {
     name
     twitterHandle
   }
@@ -190,10 +201,10 @@ But what about if we want to pull more fields? This can quickly become repetitiv
 
 ```graphql
 {
-  chimezie: author(id: 5) {
+  tap: author(id: 5) {
     ...authorDetails
   }
-  neo: author(id: 7) {
+  coding: author(id: 7) {
     ...authorDetails
   }
 }
@@ -251,7 +262,7 @@ We send data as a payload in a mutation. For our example mutation, we could send
 // Update data
 {
  "authorID": 5,
- "twitterHandle": "ammezie"
+ "twitterHandle": "tapcoding"
 }
 ```
 
@@ -261,7 +272,7 @@ And we’ll get the following response after the update has been made on the ser
 {
   "data": {
     "id": 5,
-    "twitterHandle": "ammezie"
+    "twitterHandle": "tapcoding"
   }
 }
 ```
