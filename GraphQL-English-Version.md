@@ -1,9 +1,9 @@
-# GraphQL - Learn about GraphQL, how it works, and how to use it
+# GraphQL - Learn about GraphQL
 
 Hi guys,
 I’m TapCoding. As many of you may already know, the adoption of GraphQL has been rapidly increasing, with major companies like Facebook, GitHub, and others leveraging it in their applications. Many developers have transitioned to GraphQL due to the powerful features it offers. This article aims to help you gain a clear understanding of what GraphQL is and how it works.
 
-## Table of Contents
+### Table of Contents
 - [Introduction](#introduction)
 - [What Is GraphQL?](#what-is-graphql)
 - [Query](#query)
@@ -18,7 +18,6 @@ GraphQL is a powerful query language for APIs, enabling clients to request exact
 
 In this guide, we'll explore how to create flexible queries using the schema-first method in GraphQL, along with best practices and tools that can enhance your workflow.
 
----
 
 ## What Is GraphQL?
 
@@ -40,7 +39,6 @@ In addition to these features, GraphQL is easy to use as it has a JSON like synt
 
 Let’s dive deeper. We’ll see the syntax and the operations that can be performed with GraphQL. GraphQL operations can be either read or write operations.
 
----
 
 ## Query
 
@@ -170,11 +168,11 @@ And the response will be something similar to:
 # Response
 {
   "data": {
-    "chimezie": {
-      "name": "Chimezie Enyinnaya"
+    "tap": {
+      "name": "Tran Tap"
     },
-    "neo": {
-      "name": "Neo Ighodaro"
+    "coding": {
+      "name": "Developer"
     }
   }
 }
@@ -242,7 +240,6 @@ query GetAuthor($authorID: Int!, $notOnTwitter: Boolean!, $hasPosts: Post) {
 
 The server will not return a response with the author’s Twitter handle if `$notOnTwitter` is `true`. Also, the server will return a response with the author’s post only if the author has written some posts, that is, `$hasPosts` is `true`.
 
----
 
 ## Mutation
 
@@ -281,7 +278,6 @@ Notice the response contains the newly updated data.
 
 Just like queries, mutations can also accepts multiple fields. An important distinction between mutations and queries is that mutations are executed serially in order to ensure data integrity, whereas queries are executed in parallel.
 
----
 
 ## Schemas
 
@@ -355,9 +351,10 @@ input CommentInput {
 }
 ```
 
----
 
 ## Conclusion
 
 Using a schema-first approach in GraphQL encourages thoughtful API design and makes it easier to build flexible, efficient queries. By clearly defining your schema and resolvers, you enable frontend and backend teams to collaborate effectively and independently. Combined with modern tools and best practices, you can build scalable, maintainable GraphQL APIs.
+
+To learn more about GraphQL, check out the official [documentation](https://graphql.org/learn/) and also do check out the GraphQL specifications. You can also contact me via email trantrap.it6491@gmail.com .
 
