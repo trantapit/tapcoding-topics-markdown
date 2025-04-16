@@ -4,7 +4,6 @@ Hi guys,
 I’m TapCoding. As many of you may already know, the adoption of GraphQL has been rapidly increasing, with major companies like Facebook, GitHub, and others leveraging it in their applications. Many developers have transitioned to GraphQL due to the powerful features it offers. This article aims to help you gain a clear understanding of what GraphQL is and how it works.
 
 ### Table of Contents
-- [Introduction](#introduction)
 - [What Is GraphQL?](#what-is-graphql)
 - [Query](#query)
 - [Mutation](#mutation)
@@ -12,16 +11,9 @@ I’m TapCoding. As many of you may already know, the adoption of GraphQL has be
 - [Conclusion](#conclusion)
 
 
-## Introduction
-
-GraphQL is a powerful query language for APIs, enabling clients to request exactly the data they need. One popular development strategy is the **schema-first approach**, where the GraphQL schema is defined before any code is written. This promotes clarity, consistency, and collaboration across teams.
-
-In this guide, we'll explore how to create flexible queries using the schema-first method in GraphQL, along with best practices and tools that can enhance your workflow.
-
-
 ## What Is GraphQL?
 
-GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
+Graphql is a powerful query language for API, allowing customers to require exact data they need. In other words, it provides a common interface between the client and the server for taking and manipulating the data. This promotes clarity, consistency and cooperation between groups.
 http://graphql.org
 
 In other words, GraphQL is a declarative data fetching specification and query language. It is meant to provide a common interface between the client and the server for data fetching and manipulations.
